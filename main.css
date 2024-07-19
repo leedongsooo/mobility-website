@@ -28,12 +28,12 @@
 }
 
 .header_logo {
-    width: 120px;
+    width: 380px; /* 기존 120px에서 1.5배 증가 */
 }
 
 .header_logo img {
-    max-width: 100%;
-    margin: 3px 0 0 0;
+    width: 100%; /* 부모 요소의 너비를 따라감 */
+    height: auto; /* 높이는 자동으로 설정 */
 }
 
 .header .gnb>ul {
@@ -221,23 +221,6 @@
     margin: 0 0 20px 0;
 }
 
-.mainSlide .inner p {
-    font-size: 20px;
-}
-
-.mainSlide .right {
-    position: absolute;
-    top: 50%;
-    right: -10%;
-    transform: translate(-50%, -50%);
-}
-
-.mainSlide .left {
-    position: absolute;
-    top: 50%;
-    left: -5%;
-    transform: translate(-50%, -50%);
-}
 
 .mainSlide figure img {
     width: 100%;

@@ -5,16 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>현대자동차</title>
+    <title>MOM</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/jquery.fullpage.min.css">
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="icon" href="./favicon.ico">
+    <link rel="icon" href="./img/top-logo.png">
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/jquery.fullpage.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/main.js"></script>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: white; /* 필요에 따라 배경색 설정 */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 선택 사항: 헤더에 그림자 추가 */
+            transition: top 0.3s;
+        }
+
+        .header_logo img {
+            transform: scale(1.5);
+            transform-origin: left top;
+        }
+
+        .main {
+            margin-top: 100px; /* 헤더의 높이만큼 마진 추가 */
+        }
+    </style>
 </head>
 
 <body>
@@ -24,7 +48,7 @@
             <!-- {inner -->
             <div class="inner">
                 <h1 class="header_logo">
-                    <a href="/"><img src="./img/logo.png" alt=""></a>
+                    <a href="/"><img src="./img/logo.png" alt="MOM 로고"></a>
                 </h1>
                 <!-- {gnb -->
                 <nav class="gnb">
@@ -34,19 +58,6 @@
                             <div class="lnb">
                                 <div class="lnb_inner">
                                     <div class="top">
-                                        <div class="left">
-                                            <ul>
-                                                <li><a href="">승용</a></li>
-                                                <li><a href="">SUV</a></li>
-                                                <li><a href="">MPV</a></li>
-                                                <li><a href="">수소/전기차</a></li>
-                                                <li><a href="">N/N Line</a></li>
-                                                <li><a href="">소형상용&택시</a></li>
-                                                <li><a href="">트럭&버스</a></li>
-                                                <li><a href="">GENESIS</a></li>
-                                                <li><a href="">CASPER</a></li>
-                                            </ul>
-                                        </div>
                                         <div class="right">
                                             <ul>
                                                 <li>
@@ -125,11 +136,10 @@
                             </div>
 
                         </li>
-                        <li class="list"><a href="">구매/이벤트</a></li>
-                        <li class="list"><a href="">서비스/멤버십</a></li>
-                        <li class="list"><a href="">디지털/고객지원</a></li>
-                        <li class="list"><a href="">브랜드</a></li>
-                        <li class="list"><a href="">Shop</a></li>
+                        <li class="list"><a href="">회사 소개</a></li>
+                        <li class="list"><a href="">주요 사업</a></li>
+                        <li class="list"><a href="">R&D</a></li>
+                        <li class="list"><a href="">고객지원</a></li>
                     </ul>
                 </nav>
                 <div class="plus">
@@ -153,48 +163,36 @@
                     <div class="mainSlide">
                         <figure class="itm01">
                             <div class="inner">
-                                <span>The all-new GRANDEUR</span>
-                                <p>Outclass GRANDEUR</p>
-                                <img src="./img/car01.png" alt="">
+                                <span>Elec6 is the Future</span>
+                                <p>BEV of the MOM</p>
+                                <img src="./img/car07.png" alt="">
                                 <div class=right>
-                                    VENUE
+                                    Elec5
                                 </div>
                                 <div class="left">
-                                    CASPER
+                                    NexGen
                                 </div>
                             </div>
                         </figure>
+                    
                         <figure class="itm02">
                             <div class="inner">
-                                <span>VENUE</span>
-                                <p>혼라이프를 즐기다</p>
-                                <img src="./img/car02.png" alt="">
+                                <span>NexGen 6</span>
+                                <p>스포티지 전기차</p>
+                                <img src="./img/car12.png" alt="">
                                 <div class="right">
-                                    IONIQ 6
+                                    CASPER
                                 </div>
                                 <div class="left">
-                                    GRANDEUR
+                                    VENUE
                                 </div>
                             </div>
                         </figure>
                         <figure class="itm03">
                             <div class="inner">
-                                <span>IONIQ 6</span>
-                                <p>내가 만드는 세상</p>
-                                <img src="./img/car03.png" alt="">
-                                <div class="right">
-                                    CASPER
-                                </div>
-                                <div class="left">
-                                    VENUE
-                                </div>
-                            </div>
-                        </figure>
-                        <figure class="itm04">
-                            <div class="inner">
-                                <span>CASPER</span>
-                                <p>case by CASPER</p>
-                                <img src="./img/car04.png" alt="">
+                                <span>Big MOM</span>
+                                <p>존나 큰 전기차</p>
+                                <img src="./img/car08.png" alt="">
                                 <div class="right">
                                     GRANDEUR
                                 </div>
@@ -440,7 +438,7 @@
                                 </div>
                                 <div class="itm03">
                                     <figure>
-                                        <img src="./img/footer03.png" alt="">
+                                        <img src="./img/footer03.jpg" alt="">
                                         가족친화 우수기관
                                     </figure>
                                 </div>
@@ -469,6 +467,22 @@
         <!-- main} -->
 
     </div>
+    <script>
+        document.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            const scrollPosition = window.scrollY;
+            if (scrollPosition > 0) {
+                header.style.top = '0';
+            } else {
+                header.style.top = '0';
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const header = document.querySelector('.header');
+            header.style.top = '0';
+        });
+    </script>
 </body>
 
 </html>
